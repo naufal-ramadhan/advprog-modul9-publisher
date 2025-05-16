@@ -12,3 +12,6 @@ b. The url of: “amqp://guest:guest@localhost:5672” is the same as in the sub
 URL tersebut merupakan connection string yang digunakan untuk menghubungkan aplikasi dengan message broker RabbitMQ. Ketika URL yang sama digunakan di program publisher dan subscriber, ini berarti keduanya terhubung ke server RabbitMQ yang sama. Komponen dari URL tersebut pada bagian pertama yaitu guest merupakan username yang digunakan untuk autentikasi ke server AMQP, sementara guest kedua adalah password untuk autentikasi tersebut. Bagian localhost menunjukkan bahwa server AMQP berjalan di mesin lokal, sedangkan 5672 adalah nomor port yang digunakan oleh protokol AMQP untuk komunikasi.
 
 Dengan menggunakan URL yang sama, publisher dan subscriber dapat berkomunikasi melalui message broker yang sama, memungkinkan terjadinya pertukaran pesan antara kedua aplikasi tersebut.
+
+## Message Broker: RabbitMQ
+![rabbitmq publisher](/assets/images/Running_RabbitMQ.png)  
