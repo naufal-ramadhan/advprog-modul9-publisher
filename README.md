@@ -19,3 +19,7 @@ Dengan menggunakan URL yang sama, publisher dan subscriber dapat berkomunikasi m
 ## Sending and Processing Event
 ![sending event](/assets/images/Terminals.png)
 Dalam gambar terminal ini, terdapat dua program yang saling terhubung melalui RabbitMQ (terminal atas). Program subscriber yang dijalankan pada terminal bawah kiri akan terus aktif menunggu pesan masuk. Ketika program publisher dijalankan pada terminal bawah kanan, publisher akan mengirimkan pesan yang kemudian akan diterima dan diproses oleh subscriber. Proses ini menunjukkan bagaimana kedua program dapat berkomunikasi secara asynchronous melalui message broker, di mana subscriber akan secara otomatis menampilkan pesan yang diterima dari publisher pada terminalnya.
+
+## Monitoring chart based on publisher
+![spike](/assets/images/spikes.png)
+Spike pada gambar tersebut terjadi ketika saya melakukan cargo run 2x berturut-turut pada publisher (mengirim pesan) dalam 2 waktu yang berbeda, sehingga bisa terlihat terjadi peningkatan messages rate yang drastis yang ditandai dengan spikes dalam 2 waktu yang berbeda (2 spikes).
